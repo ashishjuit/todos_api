@@ -18,12 +18,15 @@ server.use(bodyParser.urlencoded({extended: true}));
 
 server.get('/todos', function(request, response){
 var result= db.get('todos')
-  .value()
+  .value();
   response.send(result);
 });
 
 server.get('/todos/:id', function(request, response){
-  response.send('GET todos :id');
+  var todo = db.get('todos')
+               .find({id: request.params.id})
+               .value();
+  response.send(todo);             
 });
 
 server.put('/todos/:id', function(request, response){
