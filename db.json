@@ -2,8 +2,8 @@
   "todos": [
     {
       "id": "60a91b2c-60c7-4358-89ef-e8ef21e6f81a",
-      "description": "Mata ki Jai",
-      "isComplete": false
+      "description": "Krishna",
+      "isComplete": "false"
     }
   ]
 }
