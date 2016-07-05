@@ -1,18 +1,8 @@
 {
   "todos": [
     {
-      "id": "7fa749e4-eaaa-476d-ad44-f4ecf6538fc7",
-      "description": "ytfyjf",
-      "isComplete": false
-    },
-    {
       "id": "60a91b2c-60c7-4358-89ef-e8ef21e6f81a",
       "description": "Mata ki Jai",
-      "isComplete": false
-    },
-    {
-      "id": "b64c2eca-660a-4483-80b7-e9610d77cf1e",
-      "description": "Jai Kali",
       "isComplete": false
     }
   ]

@@ -26,7 +26,7 @@ server.get('/todos/:id', function(request, response){
   var todo = db.get('todos')
                .find({id: request.params.id})
                .value();
-  response.send(todo);             
+  response.send(todo);
 });
 
 server.put('/todos/:id', function(request, response){
@@ -34,7 +34,10 @@ server.put('/todos/:id', function(request, response){
 });
 
 server.delete('/todos/:id', function(request, response){
-  response.send('DELETE todos :id');
+  var todo = db.get('todos')
+               .remove({id: request.params.id})
+               .value();
+               response.send(todo);
 });
 
 server.post('/todos', function(request, response){
