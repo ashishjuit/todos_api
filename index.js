@@ -12,7 +12,6 @@ var db = lowdb('db.json');
 db.defaults({todos: []})
 .value();   //runs the previous set of commands
 
-
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({extended: true}));
 
