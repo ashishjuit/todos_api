@@ -4,7 +4,10 @@ var lowdb = require('lowdb');
 var uuid = require('uuid');
 var server = express();
 
-
+//import my model
+var Todo = require('./models/todo.js');
+var testTodo = new Todo('sum stuff');
+console.log(testTodo);
 var port = process.env.PORT || 8080;
 var db = lowdb('db.json');
 
